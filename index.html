@@ -2,41 +2,42 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8">
+  <title>📊 ניתוח מכירות אונליין</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔍 ניתוח נתונים אינטראקטיבי</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #c3f0fc, #d9c3fc);
       color: #333;
-      animation: fadeIn 2s ease-in-out;
+      direction: rtl;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     header {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      margin: 0;
       font-size: 2.5em;
-      color: #4b0082;
+      margin: 0;
+      color: #6a0dad;
     }
 
     nav {
-      background: #4b0082;
+      background-color: #6a0dad;
       color: white;
       text-align: center;
       padding: 10px 0;
     }
 
     nav a {
-      margin: 0 15px;
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
@@ -48,76 +49,100 @@
 
     h2 {
       color: #6a0dad;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+      margin-bottom: 10px;
     }
 
-    .tableau-container {
-      margin-top: 30px;
-      animation: slideIn 1.5s ease;
-    }
-
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 8px;
+    ul {
+      line-height: 2;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
       background-color: #eee;
-      color: #666;
-      font-size: 0.9em;
+      padding: 20px;
+      color: #555;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
-    @keyframes slideIn {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>📊 ניתוח נתונים מרתק</h1>
-  <p>עם כלי אינטראקטיבי מ-Tableau 💡</p>
+  <h1>📊 ניתוח מכירות אונליין</h1>
+  <p>כל התובנות העסקיות במקום אחד – עם Tableau 💼</p>
 </header>
 
 <nav>
-  <a href="#overview">סקירה כללית</a>
+  <a href="#overview">סקירה</a>
   <a href="#dashboard">לוח מחוונים</a>
   <a href="#insights">תובנות</a>
 </nav>
 
 <section id="overview">
   <h2>🔍 סקירה כללית</h2>
-  <p>באתר זה תמצאו ניתוח נתונים חזותי, המאפשר חקירה עמוקה של המידע בצורה דינמית ומעניינת.</p>
+  <p>ניתוח מעמיק של מכירות לפי קטגוריה, אזור גיאוגרפי ומגמות זמן. כל הדאטה במקום אחד.</p>
 </section>
 
-<section id="dashboard" class="tableau-container">
+<section id="dashboard">
   <h2>📈 לוח מחוונים אינטראקטיבי</h2>
-  <p>הטמעת לוח מחוונים מ-Tableau המספק תובנות מידיות על המידע.</p>
-  <iframe src="https://public.tableau.com/views/-_17443805658590/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
+
+  <div class='tableauPlaceholder' id='viz1744393523501' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Dashboard 1' src='https://public.tableau.com/static/images/-_/ -_17443805658590/Dashboard1/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='-_17443805658590/Dashboard1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/-_/ -_17443805658590/Dashboard1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1744393523501');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '1627px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 </section>
 
 <section id="insights">
   <h2>💡 תובנות עיקריות</h2>
   <ul>
-    <li>גידול שנתי בפעילות 📅</li>
-    <li>אזורים עם הביצועים הגבוהים ביותר 🌍</li>
-    <li>השוואות בין מגזרים 🏢</li>
+    <li>🔼 מגמות מכירה עולות לפי קטגוריה</li>
+    <li>🌍 ניתוח גיאוגרפי לפי אזור</li>
+    <li>📦 קטגוריות המוצרים הפופולריות ביותר</li>
   </ul>
 </section>
 
 <footer>
-  נבנה באהבה 💜 | זכויות שמורות © 2025
+  © 2025 ניתוח מכירות אונליין | כל הזכויות שמורות
 </footer>
 
 </body>
