@@ -11,11 +11,10 @@
       background: linear-gradient(to right, #c3f0fc, #d9c3fc);
       color: #333;
       direction: rtl;
-      animation: fadeIn 1.5s ease-in-out;
     }
 
     header {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
       text-align: center;
       padding: 30px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -49,11 +48,6 @@
 
     h2 {
       color: #6a0dad;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      line-height: 2;
     }
 
     footer {
@@ -61,11 +55,7 @@
       background-color: #eee;
       padding: 20px;
       color: #555;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -73,27 +63,23 @@
 
 <header>
   <h1>📊 ניתוח מכירות אונליין</h1>
-  <p>כל התובנות העסקיות במקום אחד – עם Tableau 💼</p>
+  <p>סקירה אינטראקטיבית של מכירות מכל הקטגוריות 💼</p>
 </header>
 
 <nav>
-  <a href="#overview">סקירה</a>
   <a href="#dashboard">לוח מחוונים</a>
   <a href="#insights">תובנות</a>
 </nav>
 
-<section id="overview">
-  <h2>🔍 סקירה כללית</h2>
-  <p>ניתוח מעמיק של מכירות לפי קטגוריה, אזור גיאוגרפי ומגמות זמן. כל הדאטה במקום אחד.</p>
-</section>
-
 <section id="dashboard">
   <h2>📈 לוח מחוונים אינטראקטיבי</h2>
+  <p>טבלת ניתוח המכירות מוצגת כאן באמצעות Tableau:</p>
 
+  <!-- הטמעת הדשבורד -->
   <div class='tableauPlaceholder' id='viz1744393523501' style='position: relative'>
     <noscript>
       <a href='#'>
-        <img alt='Dashboard 1' src='https://public.tableau.com/static/images/-_/ -_17443805658590/Dashboard1/1_rss.png' style='border: none' />
+        <img alt='Dashboard 1' src='https://public.tableau.com/static/images/-_/-_17443805658590/Dashboard1/1_rss.png' style='border: none' />
       </a>
     </noscript>
     <object class='tableauViz' style='display:none;'>
@@ -103,7 +89,7 @@
       <param name='name' value='-_17443805658590/Dashboard1' />
       <param name='tabs' value='no' />
       <param name='toolbar' value='yes' />
-      <param name='static_image' value='https://public.tableau.com/static/images/-_/ -_17443805658590/Dashboard1/1.png' />
+      <param name='static_image' value='https://public.tableau.com/static/images/-_/-_17443805658590/Dashboard1/1.png' />
       <param name='animate_transition' value='yes' />
       <param name='display_static_image' value='yes' />
       <param name='display_spinner' value='yes' />
@@ -135,9 +121,9 @@
 <section id="insights">
   <h2>💡 תובנות עיקריות</h2>
   <ul>
-    <li>🔼 מגמות מכירה עולות לפי קטגוריה</li>
-    <li>🌍 ניתוח גיאוגרפי לפי אזור</li>
-    <li>📦 קטגוריות המוצרים הפופולריות ביותר</li>
+    <li>🔼 מגמות לפי קטגוריות</li>
+    <li>🌍 פילוח אזורי</li>
+    <li>📦 קטגוריות מובילות</li>
   </ul>
 </section>
 
